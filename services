@@ -1,1 +1,19 @@
 
+function generateRecommendation() {
+    return {
+        board: [
+            ["💎", "💎", "💣", "💎", "💎"],
+            ["💎", "💣", "💎", "💎", "💎"],
+            ["💎", "💎", "💎", "💣", "💎"],
+            ["💣", "💎", "💎", "💎", "💎"],
+            ["💎", "💎", "💣", "💎", "💎"]
+        ],
+        stability: 80,
+        status: "active",
+        refreshRecommendation: "Upload 10-20 new screenshots for a fresh analysis"
+    };
+}
+
+module.exports = {
+    generateRecommendation
+};
