@@ -1,4 +1,4 @@
-const { generateRecommendation } = require("./services/recommendationEngine");
+ 
 const express = require("express");
 const cors = require("cors");
 
@@ -9,10 +9,7 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("Mine Vision is running successfully 🚀");
 });
-app.get("/analyze", (req, res) => {
-    const result = generateRecommendation();
-    res.json(result);
-});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log("Server is running on port " + PORT);
