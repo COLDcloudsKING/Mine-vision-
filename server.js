@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const { generateRecommendation } = require("./recommendationEngine");
+const { generateRecommendation } = require("./services/recommendationEngine");
 const app = express();
 
 app.use(cors());
