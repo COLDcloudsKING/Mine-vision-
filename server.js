@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const { generateRecommendation } = require("./recommendationEngine");
-
+const { analyzeScreenshots } = require("./services/imageAnalyzer");
 const app = express();
 
 app.use(cors());
