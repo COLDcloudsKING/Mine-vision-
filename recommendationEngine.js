@@ -1,1 +1,10 @@
-recommendationEngine.js
+
+function generateRecommendation() {
+    return {
+        status: "ok"
+    };
+}
+
+module.exports = {
+    generateRecommendation
+};
