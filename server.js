@@ -14,11 +14,14 @@ app.get("/", (req, res) => {
 app.get("/test", (req, res) => {
   res.json(generateRecommendation());
 });
-
 const PORT = process.env.PORT || 3000;
-
 
 app.get("/analyze", (req, res) => {
   const result = analyzeScreenshots([]);
   res.json(result);
 });
+
+app.listen(PORT, () => {
+  console.log("Server is running on port " + PORT);
+});
+
